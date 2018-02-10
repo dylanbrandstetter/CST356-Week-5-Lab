@@ -13,11 +13,6 @@ namespace WebApplication1.Controllers
     {
         private readonly IAppRepository _dataRepository;
 
-        public UserController()
-        {
-            _dataRepository = new AppRepository();
-        }
-
         public UserController(IAppRepository repository)
         {
             _dataRepository = repository;

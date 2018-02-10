@@ -11,9 +11,9 @@ namespace CST356_Week_5_Lab.Repositories
     {
         private readonly MyDbContext _dbContext;
 
-        public AppRepository()
+        public AppRepository(MyDbContext dbContext)
         {
-            _dbContext = new MyDbContext();
+            _dbContext = dbContext;
         }
 
         public User GetUser(int id)

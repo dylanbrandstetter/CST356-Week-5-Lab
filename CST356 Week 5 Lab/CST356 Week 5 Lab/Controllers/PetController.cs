@@ -13,11 +13,6 @@ namespace CST356_Week_5_Lab.Controllers
     {
         private readonly IAppRepository _dataRepository;
 
-        public PetController()
-        {
-            _dataRepository = new AppRepository();
-        }
-
         public PetController(IAppRepository repository)
         {
             _dataRepository = repository;

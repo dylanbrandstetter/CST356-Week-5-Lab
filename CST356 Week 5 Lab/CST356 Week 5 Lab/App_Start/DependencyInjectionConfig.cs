@@ -6,7 +6,9 @@ using SimpleInjector.Integration.Web.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
+using System.Web.Mvc;
 
 namespace CST356_Week_5_Lab.App_Start
 {
@@ -16,9 +18,15 @@ namespace CST356_Week_5_Lab.App_Start
         {
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
-
-            // Register your types, for instance:
+            
             container.Register<IAppRepository, AppRepository>(Lifestyle.Scoped);
             container.Register<MyDbContext, MyDbContext>(Lifestyle.Scoped);
+
+            container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
+
+            container.Verify();
+
+            DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
+    }
 }
