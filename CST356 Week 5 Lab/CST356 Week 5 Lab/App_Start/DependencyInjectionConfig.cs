@@ -1,5 +1,6 @@
 ﻿using CST356_Week_5_Lab.Data;
 using CST356_Week_5_Lab.Repositories;
+using CST356_Week_5_Lab.Services;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
@@ -21,6 +22,7 @@ namespace CST356_Week_5_Lab.App_Start
             
             container.Register<IAppRepository, AppRepository>(Lifestyle.Scoped);
             container.Register<MyDbContext, MyDbContext>(Lifestyle.Scoped);
+            container.Register<IPetService, PetService>(Lifestyle.Scoped);
 
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
 

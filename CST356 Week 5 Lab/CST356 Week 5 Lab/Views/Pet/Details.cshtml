@@ -34,6 +34,14 @@
             @Html.DisplayFor(model => model.NextCheckup)
         </dd>
 
+        @{
+            if (Model.CheckupAlert)
+            {
+                <dt></dt>
+                <dd>Next checkup soon</dd>
+            }
+        }
+
         <dt>
             @Html.DisplayNameFor(model => model.VetName)
         </dt>
