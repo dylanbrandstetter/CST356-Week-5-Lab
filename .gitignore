@@ -286,3 +286,4 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/CST356 Week 5 Lab/CST356 Week 5 Lab/App_Start/DependencyInjectionConfig.cs
