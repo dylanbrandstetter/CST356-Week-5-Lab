@@ -81,6 +81,8 @@ namespace CST356_Week_5_Lab.Services
                 VetName = pet.VetName,
                 UserId = pet.UserId,
                 CheckupAlert = (pet.NextCheckup - DateTime.Now).Days < 14
+                // Broken version:
+                //CheckupAlert = (pet.NextCheckup - DateTime.Now).Days > 14
             };
         }
 

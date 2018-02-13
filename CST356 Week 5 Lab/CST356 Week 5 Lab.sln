@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST356 Week 5 Lab", "CST356 Week 5 Lab\CST356 Week 5 Lab.csproj", "{DB27A932-D53B-4C1A-9D0E-43FE589F7D04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST345 Week 5 Tests", "CST345 Week 5 Tests\CST345 Week 5 Tests.csproj", "{A5F57A00-D6E4-4B45-8F75-954A137AC021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DB27A932-D53B-4C1A-9D0E-43FE589F7D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB27A932-D53B-4C1A-9D0E-43FE589F7D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB27A932-D53B-4C1A-9D0E-43FE589F7D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F57A00-D6E4-4B45-8F75-954A137AC021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F57A00-D6E4-4B45-8F75-954A137AC021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F57A00-D6E4-4B45-8F75-954A137AC021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F57A00-D6E4-4B45-8F75-954A137AC021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
